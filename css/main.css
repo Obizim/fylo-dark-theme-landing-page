@@ -29,7 +29,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px;
+  padding: 40px 50px;
 }
 
 nav img {
@@ -251,7 +251,7 @@ nav .menu-nav__item .link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4rem 10rem 15rem 10rem;
+  padding: 4rem 10rem 18rem 10rem;
 }
 
 .main .testimonial .test_profile {
@@ -310,7 +310,7 @@ nav .menu-nav__item .link {
           align-items: center;
   margin-top: 20px;
   position: absolute;
-  left: 18rem;
+  left: 17rem;
   top: 300%;
   background: #1c2431;
   padding: 4rem 5rem;
@@ -355,6 +355,7 @@ nav .menu-nav__item .link {
   margin: 0 20px;
   outline: none;
   padding: 10px;
+  opacity: 0.9;
 }
 
 .access .btn input:focus {
@@ -400,7 +401,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   background: #0b1523;
-  padding: 6rem;
+  padding: 10rem 8rem;
 }
 
 .footer_list {
