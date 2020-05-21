@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Handlee", cursive;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -163,7 +163,11 @@ nav .menu-nav__item .link {
   padding: 0 7rem;
 }
 
-.productive {
+.main {
+  background: #181f2a;
+}
+
+.main .productive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,12 +185,12 @@ nav .menu-nav__item .link {
   padding: 4rem 7rem;
 }
 
-.productive .prod {
+.main .productive .prod {
   padding: 30px;
   margin: 0 5rem;
 }
 
-.productive .texts {
+.main .productive .texts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,19 +204,19 @@ nav .menu-nav__item .link {
   padding: 50px;
 }
 
-.productive .texts h3 {
+.main .productive .texts h3 {
   font-size: 2rem;
   width: 70%;
   font-weight: 400;
 }
 
-.productive .texts p {
+.main .productive .texts p {
   font-weight: 300;
   font-size: 15px;
   margin-top: 15px;
 }
 
-.productive .texts .flex {
+.main .productive .texts .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,12 +228,231 @@ nav .menu-nav__item .link {
   text-decoration: underline;
 }
 
-.productive .texts .flex a {
+.main .productive .texts .flex a {
   text-decoration: none;
   color: #65e2d9;
 }
 
-.productive .texts .flex img {
+.main .productive .texts .flex img {
   width: 20px;
+}
+
+.main .testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 10rem 15rem 10rem;
+}
+
+.main .testimonial .test_profile {
+  background: #202a3c;
+  -webkit-box-shadow: 0 3px 5px rgba(12, 8, 8, 0.5);
+          box-shadow: 0 3px 5px rgba(12, 8, 8, 0.5);
+  margin: 0.5rem 1rem;
+  padding: 2rem;
+}
+
+.main .testimonial .test_profile .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 20px;
+}
+
+.main .testimonial .test_profile .profile img {
+  height: 30px;
+  border-radius: 50%;
+}
+
+.main .testimonial .test_profile .profile .names {
+  margin: 0 10px;
+}
+
+.main .testimonial .test_profile .profile .names h6 {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.main .testimonial .test_profile .profile .names p {
+  font-size: 10px;
+}
+
+.access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  position: absolute;
+  left: 18rem;
+  top: 300%;
+  background: #1c2431;
+  padding: 4rem 5rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.access h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.access p {
+  margin-top: 10px;
+  text-align: center;
+  width: 55%;
+}
+
+.access .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.access .btn input {
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin: 0 20px;
+  outline: none;
+  padding: 10px;
+}
+
+.access .btn input:focus {
+  border: 1.5px solid #65e2d9;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.access .btn button {
+  height: 2.5rem;
+  font-size: 15px;
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  padding: 5px 1.6rem 5px 1.6rem;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.access .btn button:active {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+footer {
+  background: #0b1523;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0b1523;
+  padding: 6rem;
+}
+
+.footer_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer_list #logo {
+  width: 150px;
+}
+
+.footer_list .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.footer_list .foot img {
+  margin: 0 20px;
+}
+
+.footer_list ul {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.footer_list ul li {
+  margin: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #65e2d9;
 }
 /*# sourceMappingURL=main.css.map */
