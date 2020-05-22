@@ -79,10 +79,9 @@ nav .menu-nav__item .link {
 }
 
 .container .texts h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   width: 25rem;
-  text-align: center;
 }
 
 .container .texts p {
@@ -146,7 +145,7 @@ nav .menu-nav__item .link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 20px;
+  padding: 10px 50px;
 }
 
 .articles__list .texts {
@@ -162,7 +161,7 @@ nav .menu-nav__item .link {
 .articles__list .texts p {
   font-size: 13px;
   font-weight: 100;
-  padding: 0 7rem;
+  padding: 0 3rem;
 }
 
 .main {
@@ -204,17 +203,17 @@ nav .menu-nav__item .link {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 50px;
+  text-align: center;
 }
 
 .main .productive .texts h3 {
-  font-size: 2rem;
-  width: 70%;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
 .main .productive .texts p {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 15px;
 }
 
@@ -237,6 +236,7 @@ nav .menu-nav__item .link {
 
 .main .productive .texts .flex img {
   width: 20px;
+  padding-bottom: 20px;
 }
 
 .main .testimonial {
@@ -261,7 +261,7 @@ nav .menu-nav__item .link {
   -webkit-box-shadow: 0 3px 5px rgba(12, 8, 8, 0.5);
           box-shadow: 0 3px 5px rgba(12, 8, 8, 0.5);
   margin: 0.5rem 1rem;
-  padding: 2rem;
+  padding: 2.5rem;
 }
 
 .main .testimonial .test_profile .profile {
@@ -473,10 +473,12 @@ footer {
     width: 100%;
   }
   .container .texts h3 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    padding: 0px 4rem;
   }
   .container .texts p {
-    font-size: 13px;
+    font-size: 10px;
+    padding: 1px 4rem;
   }
   .articles {
     display: -webkit-box;
@@ -499,7 +501,7 @@ footer {
     padding: 0;
   }
   .articles__list .texts {
-    padding: 0;
+    padding: 1rem;
   }
   .articles__list .texts h6 {
     margin-top: 10px;
@@ -507,6 +509,7 @@ footer {
   .articles__list .texts p {
     margin-top: 10px;
     margin-bottom: 2rem;
+    padding: 0;
   }
   .main .productive {
     -webkit-box-orient: vertical;
@@ -517,13 +520,14 @@ footer {
   .main .productive .prod {
     padding: 0;
     margin: 0;
+    width: 150%;
   }
   .main .productive .texts {
     margin-top: 20px;
     padding: 0;
   }
   .main .productive .texts h3 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   .main .productive .texts p {
     font-size: 13px;
@@ -536,7 +540,56 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0;
+    padding: 3rem 2rem 10rem 2rem;
+  }
+  .access {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    left: 0rem;
+    top: 4rem;
+    padding: 4rem 4rem;
+    margin: 0 2rem;
+  }
+  .access h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .access p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .access .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15px;
+  }
+  .access .btn input {
+    width: 300px;
+    margin: 15px 20px;
+    padding: 10px;
+  }
+  .access .btn button {
+    font-size: 11px;
   }
   .footer {
     display: -webkit-box;

@@ -24,11 +24,14 @@
     }
 
     .texts {
+      
       h3 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+       padding: 0px 4rem;
       }
       p {
-        font-size: 13px;
+        font-size: 10px;
+        padding: 1px 4rem;
       }
     }
   }
@@ -44,13 +47,15 @@
     &__list {
       padding: 0;
       .texts {
-        padding: 0;
+        padding: 1rem;
+
         h6 {
           margin-top: 10px;
         }
         p {
           margin-top: 10px;
           margin-bottom: 2rem;
+          padding: 0;
         }
       }
     }
@@ -63,6 +68,7 @@
     .prod {
         padding: 0;
         margin: 0;
+        width: 150%;
       }
 
       .texts {
@@ -70,7 +76,7 @@
         padding: 0;
 
         h3{
-            font-size: 1.5rem;
+            font-size: 1.1rem;
         }
         p{
             font-size: 13px;
@@ -81,10 +87,46 @@
 .testimonial {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 3rem 2rem 10rem 2rem;
 }
 }
 
+.access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 0rem;
+  top: 4rem;
+  padding: 4rem 4rem;
+  margin: 0 2rem;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+    input {
+      width: 300px;
+      margin: 15px 20px;
+      padding: 10px;
+    }
+    button {
+      font-size: 11px;
+    }
+  }
+}
 .footer {
     display: flex;
     flex-direction: column;
