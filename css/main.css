@@ -80,7 +80,9 @@ nav .menu-nav__item .link {
 
 .container .texts h3 {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
+  width: 25rem;
+  text-align: center;
 }
 
 .container .texts p {
@@ -455,5 +457,101 @@ footer {
 
 .attribution a {
   color: #65e2d9;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+  nav img {
+    width: 70px;
+  }
+  nav .menu-nav__item {
+    margin: 10px;
+  }
+  .container img {
+    width: 100%;
+  }
+  .container .texts h3 {
+    font-size: 1.5rem;
+  }
+  .container .texts p {
+    font-size: 13px;
+  }
+  .articles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .articles__list {
+    padding: 0;
+  }
+  .articles__list .texts {
+    padding: 0;
+  }
+  .articles__list .texts h6 {
+    margin-top: 10px;
+  }
+  .articles__list .texts p {
+    margin-top: 10px;
+    margin-bottom: 2rem;
+  }
+  .main .productive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .productive .prod {
+    padding: 0;
+    margin: 0;
+  }
+  .main .productive .texts {
+    margin-top: 20px;
+    padding: 0;
+  }
+  .main .productive .texts h3 {
+    font-size: 1.5rem;
+  }
+  .main .productive .texts p {
+    font-size: 13px;
+  }
+  .main .testimonial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 /*# sourceMappingURL=main.css.map */
