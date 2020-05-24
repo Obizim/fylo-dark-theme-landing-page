@@ -6,6 +6,7 @@ body {
   color: $White;
   font-size: 14px;
   background: $DarkBlueIntro;
+  width:100vw;
 }
 
 nav {
@@ -84,7 +85,7 @@ nav {
   align-items: center;
   grid-gap: 1px;
   padding: 4rem 10rem 0 10rem;
-  background: url("../images/bg-curvy-desktop.svg") center top;
+  background: url("../images/bg-curvy-desktop.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -124,6 +125,7 @@ nav {
     padding: 4rem 7rem;
 
     .prod {
+      padding: 0 5rem;
       padding: 30px;
       margin: 0 5rem;
     }
@@ -168,7 +170,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 10rem 18rem 10rem;
+    padding: 4rem 10rem 0 10rem;
 
     .test_profile {
       background: $DarkBlueTest;
@@ -202,6 +204,9 @@ nav {
     }
   }
 }
+.accessbg{
+  background: $DarkBlueMain;
+}
 
 .access {
   display: flex;
@@ -209,9 +214,10 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  position: absolute;
-  left: 17rem;
-  top: 310%;
+  position: relative;
+  left: 0rem;
+  top: 4rem;
+  margin: 0 10rem;
   background: $DarkBlueIntro;
   padding: 4rem 5rem;
   border-radius: 5px;

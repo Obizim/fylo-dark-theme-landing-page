@@ -13,6 +13,7 @@ body {
   color: white;
   font-size: 14px;
   background: #1c2431;
+  width: 100vw;
 }
 
 nav {
@@ -126,7 +127,7 @@ nav .menu-nav__item .link {
           align-items: center;
   grid-gap: 1px;
   padding: 4rem 10rem 0 10rem;
-  background: url("../images/bg-curvy-desktop.svg") center top;
+  background: url("../images/bg-curvy-desktop.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -187,6 +188,7 @@ nav .menu-nav__item .link {
 }
 
 .main .productive .prod {
+  padding: 0 5rem;
   padding: 30px;
   margin: 0 5rem;
 }
@@ -252,7 +254,7 @@ nav .menu-nav__item .link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4rem 10rem 18rem 10rem;
+  padding: 4rem 10rem 0 10rem;
 }
 
 .main .testimonial .test_profile {
@@ -295,6 +297,10 @@ nav .menu-nav__item .link {
   font-size: 10px;
 }
 
+.accessbg {
+  background: #181f2a;
+}
+
 .access {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,9 +316,10 @@ nav .menu-nav__item .link {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
-  position: absolute;
-  left: 17rem;
-  top: 310%;
+  position: relative;
+  left: 0rem;
+  top: 4rem;
+  margin: 0 10rem;
   background: #1c2431;
   padding: 4rem 5rem;
   border-radius: 5px;
@@ -477,7 +484,7 @@ footer {
   color: #65e2d9;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   nav {
     padding: 10px;
   }
@@ -650,6 +657,40 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .main .productive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .main .productive .prod {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+  .main .productive .texts {
+    margin-top: 20px;
+    padding: 0;
+  }
+  .main .productive .texts h3 {
+    font-size: 1.5rem;
+  }
+  .main .productive .texts p {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+  .main .productive .texts .flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

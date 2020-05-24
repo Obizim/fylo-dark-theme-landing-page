@@ -1,5 +1,11 @@
 @mixin media-sm {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
     @content;
   }
 }
@@ -155,4 +161,36 @@
     }
 }
 
+}
+
+@include media-lg(){
+  .main {
+    .productive {
+      flex-direction: column;
+      padding: 0;
+  
+      .prod {
+          padding: 0;
+          margin: 0;
+          width: 50%;
+        }
+  
+        .texts {
+           margin-top: 20px;
+          padding: 0;
+  
+          h3{
+              font-size: 1.5rem;
+          }
+          p{
+              font-size: 13px;
+              padding: 0 10px;
+          }
+          .flex {
+            justify-content: center;
+            align-items: center;
+          }
+      }
+    }
+  }
 }
