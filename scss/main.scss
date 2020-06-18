@@ -1,12 +1,15 @@
 @import "./config";
 
+*{
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
   color: $White;
   font-size: 14px;
   background: $DarkBlueIntro;
-  width:100vw;
 }
 
 nav {
@@ -14,7 +17,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 50px;
+  padding: 60px 90px;
 
   img {
     width: 150px;
@@ -44,18 +47,17 @@ nav {
 
   .texts {
     text-align: center;
-    margin-top: 25px;
-    padding: 50px;
+    flex: 1;
+    margin: 10px 0;
+    padding: 20px 10px;
 
     h3 {
       font-size: 1.5rem;
-      font-weight: 300;
-      width: 25rem;
     }
     p {
-      font-weight: 300;
       font-size: 15px;
       margin-top: 10px;
+      max-width: 500px;
     }
     button {
       height: 2.5rem;
@@ -73,6 +75,9 @@ nav {
       &:active {
         transition: all 0.5s ease-in-out;
         transform: translateY(10px);
+      }
+      &:focus {
+        outline: none;
       }
     }
   }
@@ -106,8 +111,6 @@ nav {
       }
 
       p {
-        font-size: 13px;
-        font-weight: 100;
         padding: 0 3rem;
       }
     }
@@ -135,7 +138,6 @@ nav {
       flex-direction: column;
       justify-content: center;
       padding: 50px;
-      text-align: center;
 
       h3 {
         font-size: 1.5rem;
@@ -170,7 +172,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 10rem 0 10rem;
+    padding: 4rem 10rem 4rem 10rem;
 
     .test_profile {
       background: $DarkBlueTest;
@@ -204,7 +206,7 @@ nav {
     }
   }
 }
-.accessbg{
+.accessbg {
   background: $DarkBlueMain;
 }
 
@@ -213,10 +215,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
   position: relative;
   left: 0rem;
-  top: 4rem;
+  top: 5rem;
   margin: 0 10rem;
   background: $DarkBlueIntro;
   padding: 4rem 5rem;
@@ -250,9 +251,9 @@ nav {
       padding: 10px;
       opacity: 0.9;
 
-      &:focus{
-          border: 1.5px solid $Cyan;
-          transition: all 1s ease-in-out;
+      &:focus {
+        border: 1.5px solid $Cyan;
+        transition: all 1s ease-in-out;
       }
     }
     button {
@@ -304,7 +305,7 @@ footer {
         margin: 0 20px;
       }
 
-      i{
+      i {
         margin: 5px;
         color: #fff;
         border: 1px solid #fff;
@@ -317,17 +318,16 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      
-    ul {
-      list-style: none;
-      margin: 0 20px;
 
-      li {
-        margin: 5px;
+      ul {
+        list-style: none;
+        margin: 0 20px;
+
+        li {
+          margin: 5px;
+        }
       }
     }
-    }
-
   }
 }
 
@@ -339,4 +339,4 @@ footer {
   color: $Cyan;
 }
 
-@import './responsive';
+@import "./responsive";

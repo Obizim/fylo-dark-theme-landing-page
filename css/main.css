@@ -4,7 +4,11 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,7 +17,6 @@ body {
   color: white;
   font-size: 14px;
   background: #1c2431;
-  width: 100vw;
 }
 
 nav {
@@ -30,7 +33,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 50px;
+  padding: 60px 90px;
 }
 
 nav img {
@@ -75,20 +78,21 @@ nav .menu-nav__item .link {
 
 .container .texts {
   text-align: center;
-  margin-top: 25px;
-  padding: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 10px 0;
+  padding: 20px 10px;
 }
 
 .container .texts h3 {
   font-size: 1.5rem;
-  font-weight: 300;
-  width: 25rem;
 }
 
 .container .texts p {
-  font-weight: 300;
   font-size: 15px;
   margin-top: 10px;
+  max-width: 500px;
 }
 
 .container .texts button {
@@ -112,6 +116,10 @@ nav .menu-nav__item .link {
   transition: all 0.5s ease-in-out;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
+}
+
+.container .texts button:focus {
+  outline: none;
 }
 
 .articles {
@@ -160,8 +168,6 @@ nav .menu-nav__item .link {
 }
 
 .articles__list .texts p {
-  font-size: 13px;
-  font-weight: 100;
   padding: 0 3rem;
 }
 
@@ -205,7 +211,6 @@ nav .menu-nav__item .link {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 50px;
-  text-align: center;
 }
 
 .main .productive .texts h3 {
@@ -254,7 +259,7 @@ nav .menu-nav__item .link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4rem 10rem 0 10rem;
+  padding: 4rem 10rem 4rem 10rem;
 }
 
 .main .testimonial .test_profile {
@@ -315,10 +320,9 @@ nav .menu-nav__item .link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
   position: relative;
   left: 0rem;
-  top: 4rem;
+  top: 5rem;
   margin: 0 10rem;
   background: #1c2431;
   padding: 4rem 5rem;
@@ -486,7 +490,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
   nav {
-    padding: 10px;
+    padding: 30px;
   }
   nav img {
     width: 70px;
@@ -497,13 +501,11 @@ footer {
   .container img {
     width: 100%;
   }
+  .container .texts {
+    padding: 0;
+  }
   .container .texts h3 {
     font-size: 1.1rem;
-    padding: 0px 4rem;
-  }
-  .container .texts p {
-    font-size: 10px;
-    padding: 1px 4rem;
   }
   .articles {
     display: -webkit-box;
@@ -521,9 +523,10 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
+    margin-top: 50px;
   }
   .articles__list {
-    padding: 0;
+    padding: 20px;
   }
   .articles__list .texts {
     padding: 1rem;
@@ -549,6 +552,7 @@ footer {
     width: 100%;
   }
   .main .productive .texts {
+    text-align: center;
     margin-top: 20px;
     padding: 0;
   }
